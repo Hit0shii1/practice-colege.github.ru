@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои достижения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="practice.html">Производственная практика</a></li>
+                <li><a href="coursework.html">Курсовая работа</a></li>
+                <li><a href="achievements.html">Мои достижения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Достижения и сертификаты</h2>
+
+        <h3>Сертификаты пройденных курсов</h3>
+        <img src="images/сертификат 1.JPG"  class="thumbnail" onclick="openImage(this)">
+        <img src="images/сертификат 2.JPG"  class="thumbnail" onclick="openImage(this)">
+        <img src="images/сертификат 3.JPG"  class="thumbnail" onclick="openImage(this)">
+    </main>
+    <footer>
+        <p>&copy; 2025 Даниил </p>
+    </footer>
+    <div id="modal" class="modal" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Производственная практика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="practice.html">Производственная практика</a></li>
+                <li><a href="coursework.html">Курсовая работа</a></li>
+                <li><a href="achievements.html">Мои достижения</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Информация о месте прохождения практики</h2>
+        <p> <a href="https://www.rusprofile.ru/id/2308936" target="_blank">АО "Стройфирма"</a>.</p>
+
+        <h3>Фотографии с места практики</h3>
+        <img src="images/фото практики 1.jpg" alt="Фото 1" class="thumbnail" onclick="openImage(this)">
+        <img src="images/фото практики 2.jpg" alt="Фото 2" class="thumbnail" onclick="openImage(this)">
+    </main>
+    <footer>
+        <p>&copy; 2025 Даниил</p>
+    </footer>
+
+    <!-- Модальное окно для изображений -->
+    <div id="modal" class="modal" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
